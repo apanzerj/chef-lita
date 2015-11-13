@@ -2,7 +2,7 @@
 
 # The Lita gem version to install.  By default it uses pessimistic version
 # constraints, so will install the latest gem in the 4.0.X line.
-default["lita"]["version"] = "4.0.0"
+default["lita"]["version"] = "4.6.0"
 default["lita"]["version_constraint"] = "~>"
 
 # The name your robot will use.
@@ -82,7 +82,6 @@ default["lita"]["plugins"] = []
 # Array of extra gems to install OR hashes of gems and Gemfile formatted line
 # See above for example.
 default["lita"]["gems"] = [
-  "lita-flowdock, :git => 'https://github.com/bhouse/lita-flowdock', :ref => 'master'"
 ]
 
 # Configuration specific to plugin list above. Example:
