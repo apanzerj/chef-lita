@@ -37,13 +37,13 @@ default["lita"]["admin"] = []
 
 # An array of adapters you want to connect with. Recipe will auto-install any
 # adapter found here: https://www.lita.io/plugins
-default["lita"]["adapters"] = [:shell]
+default["lita"]["adapters"] = ['flowdock']
 
 # Hash of adapter versions to install (using Gemfile format); nil for latest
 # Example:
 #
 # default["lita"]["adapter_versions"] = { :hipchat => 1.6.2 }
-default["lita"]["adapter_versions"] = { :shell => nil }
+default["lita"]["adapter_versions"] = { 'lita-flowdock' => 'master' }
 
 # Hash of configurations specific to adapters above:
 # Example:
@@ -61,7 +61,12 @@ default["lita"]["adapter_versions"] = { :shell => nil }
 #     "ATTR2"     => "VAL2"
 #   }
 # }
-default["lita"]["adapter_config"] = {}
+default["lita"]["adapter_config"]['flowdock'] = {
+  'api-token' => ENV['API_TOKEN'],
+  'organization' => ENV['FLOWDOCK_ORG'],
+  'flows' => ['tools']
+}
+
 
 # Array of plugin to install OR hashes of plugins and Gemfile formatted line
 # Example:
