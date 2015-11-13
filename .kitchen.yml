@@ -20,7 +20,6 @@ suites:
           - User2
         packages:
           - openssl
-          - libssl-dev
           - ca-certificates
           - libcurl4-gnutls-dev
           - git

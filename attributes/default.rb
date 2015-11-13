@@ -6,7 +6,7 @@ default["lita"]["version"] = "4.0.0"
 default["lita"]["version_constraint"] = "~>"
 
 # The name your robot will use.
-default["lita"]["name"] = "Lita Chatbot"
+default["lita"]["name"] = "Revere"
 
 # The name Lita will look for in messages to determine if the message is being
 # addressed to it. Usually this is the same as the display name, but in some
@@ -92,7 +92,6 @@ default["lita"]["plugin_config"] = {}
 # helpful for adding native libs needed by adapters / handlers
 default["lita"]["packages"] = %w(
   openssl
-  libssl-dev
   ca-certificates
   libcurl4-gnutls-dev
 )
