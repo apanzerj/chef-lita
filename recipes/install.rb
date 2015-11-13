@@ -105,3 +105,5 @@ template "#{node["lita"]["install_dir"]}/lita_config.rb" do
   helpers(LitaHelpers)
 end
 
+Chef::Log.info("::::::::::::::::")
+Chef::Log.info("::::::::::::::::")

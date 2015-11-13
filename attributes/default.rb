@@ -62,8 +62,8 @@ default["lita"]["adapter_versions"] = { 'lita-flowdock' => 'master' }
 #   }
 # }
 default["lita"]["adapter_config"]['flowdock'] = {
-  'api-token' => ENV['API_TOKEN'],
-  'organization' => ENV['FLOWDOCK_ORG'],
+  'api-token' => node['lita']['secret'],
+  'organization' => 'zendesk',
   'flows' => ['tools']
 }
 
