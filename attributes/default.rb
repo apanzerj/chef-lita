@@ -81,7 +81,9 @@ default["lita"]["plugins"] = []
 
 # Array of extra gems to install OR hashes of gems and Gemfile formatted line
 # See above for example.
-default["lita"]["gems"] = []
+default["lita"]["gems"] = [
+  {'lita-flowdock' => "master", :git => 'https://github.com/bhouse/lita-flowdock'}
+]
 
 # Configuration specific to plugin list above. Example:
 #
