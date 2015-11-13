@@ -21,7 +21,6 @@ suites:
         packages:
           - openssl
           - ca-certificates
-          - libcurl4-gnutls-dev
           - git
         init_style: init
         plugins:

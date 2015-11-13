@@ -93,7 +93,6 @@ default["lita"]["plugin_config"] = {}
 default["lita"]["packages"] = %w(
   openssl
   ca-certificates
-  libcurl4-gnutls-dev
 )
 
 # Set options for redis connection
